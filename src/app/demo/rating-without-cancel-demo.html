@@ -1,0 +1,6 @@
+<div  *ngFor="let la of value">
+  <div *ngIf="la.key && la.value && (la.value >= 3)">
+    <h2>{{la.key}}</h2>
+    <p-rating [(ngModel)]="la.value" [cancel]="false"></p-rating>
+  </div>
+</div>
